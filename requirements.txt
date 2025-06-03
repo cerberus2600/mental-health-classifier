@@ -1,0 +1,6 @@
+streamlit
+transformers
+torch>=2.0.0
+sentencepiece  # Required for tokenizer support in some models
+scikit-learn>=1.0
+numpy
