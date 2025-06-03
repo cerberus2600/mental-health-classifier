@@ -7,7 +7,7 @@ import numpy as np
 # Load model and tokenizer
 @st.cache_resource
 def load_model():
-    model_path = "results/best_model"  # adjust this to your model directory
+    model_path = "trained_model"  # adjust this to your model directory
     tokenizer = BertTokenizer.from_pretrained(model_path)
     model = BertForSequenceClassification.from_pretrained(model_path)
     model.eval()
