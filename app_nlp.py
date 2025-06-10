@@ -9,7 +9,7 @@ st.set_page_config(page_title="Mental Health Classifier & Chatbot", layout="wide
 # Load fine-tuned BERT model
 @st.cache_resource
 def load_bert_model():
-    model_path = "/content/drive/MyDrive/NLP/best_model"
+    model_path = "trained_model"
     tokenizer = BertTokenizer.from_pretrained(model_path)
     model = BertForSequenceClassification.from_pretrained(model_path)
     model.eval()
