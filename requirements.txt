@@ -3,3 +3,4 @@ transformers
 torch>=2.0.0
 scikit-learn>=1.0
 numpy
+openai
