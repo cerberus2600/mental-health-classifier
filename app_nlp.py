@@ -55,7 +55,7 @@ elif page == "Chatbot":
     if "llm_client" not in st.session_state:
         st.session_state.llm_client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key="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"
+            api_key=st.secrets["OPENROUTER_API_KEY"]
         )
 
     
